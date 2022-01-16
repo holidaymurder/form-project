@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form Project</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="form-style.css"/>
+    </head>
+    <body>
+    <div class="image">
+        <img src="1950.png" alt="">
+    </div>
+    <main>
+            <h1 id="title">This is my survey form</h1>
+            <p id="description">This is me messing about with the little knowledge I have</p>
+            <form id="survey-form" action="">
+                <fieldset id="personal-info">
+                    <label id="name-label">Name
+                        <input id="name" name="name" type="text" placeholder="John Doe" required>
+                    </label>
+                    <label id="email-label">Email
+                        <input id="email" type="email" placeholder="example@email.com" required>
+                    </label>
+                    <label id="number-label">Age
+                        <input type="number" name="number" id="number" min="13" max="120" placeholder="years">
+                    </label>
+                </fieldset>
+                <fieldset id="food-info">
+                    <label>Favourite poorly spelled Italian food?
+                        <select name="dropdown" id="dropdown">
+                            <option value="">
+                                make your selection
+                            </option>
+                            <option value="1">
+                                pitza
+                            </option>
+                            <option value="2">
+                                pasghetti
+                            </option>
+                            <option value="3">
+                                lasaganna
+                            </option>
+                            <option value="4">
+                                just plain old tomato sauce
+                            </option>
+                        </select>
+                        </label>
+                </fieldset>
+                <fieldset id="sports-info">
+                    <legend>Name the sport you'd be least shit at</legend>
+                    <label>Ice Skating
+                        <input type="radio" class="inline" name="sports-info" value="skate">
+                    </label>
+                    <label>Olympic Gymnastics
+                        <input type="radio" class="inline" name="sports-info" value="gymnastic">
+                    </label>
+                    <label>Mud Wrestling
+                        <input type="radio" class="inline" name="sports-info" value="wrestle">
+                    </label>
+                    <label>Having a conversation with your dad
+                        <input type="radio" class="inline" name="sports-info" value="dad">
+                    </label>
+                </fieldset>
+                <fieldset id="smell-info">
+                    <legend>Check all enjoyable smells</legend>
+                    <label>wet grass
+                        <input type="checkbox" class="inline" value="grass">
+                    </label>
+                    <label>pipe tobacco
+                        <input type="checkbox" class="inline" value="tobacco">
+                    </label>
+                    <label>sour breastmilk
+                        <input type="checkbox" class="inline" value="milk">
+                    </label>
+                    <label>wood varnish
+                        <input type="checkbox" class="inline" value="varnish">
+                    </label>
+                    <label>murder
+                        <input type="checkbox" class="inline" value="murder">
+                    </label>
+                    <label>nationalism
+                        <input type="checkbox" class="inline" value="satire">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Tell me how badly I did</legend>
+                    <label for="comment"></label><textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                </fieldset>
+
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </main>
+
+    </body>
+</html>
